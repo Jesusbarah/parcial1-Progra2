@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+</head>
+<!--
+    ENUNCIADO
+Crear un index.html con lo básico de html5 para iniciar una página más un header 4 con el
+título: “pregunta2”. luego del título un quiebre de línea y luego además una tabla 3x3 con
+id= “part1” class= “alpha”. los encabezados de columna deben distinguirse. El contenido de
+las filas y columnas es autos. y luego de la tabla un quiebre de línea y luego además un botón
+con id= “part2” class= “beta”. en el atributo onClick debe tener una alerta con la frase “hora
+de cenar!”.
+-->
+<body>
+    <h4>pregunta2</h4>
+    <br>
+    <table id="part1" class="alpha">
+        <tr>
+            <th>Código</th>
+            <th>Marca</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>0054</td>
+            <td>Toyota</td>
+            <td>Rojo</td>
+        </tr>
+        <tr>
+            <td>0067</td>
+            <td>BMW</td>
+            <td>azul</td>
+        </tr>
+        <tr>
+            <td>0074</td>
+            <td>Audi</td>
+            <td>Blanco</td>
+        </tr>
+    </table>
+    <br>
+    <script>function Mensaje(){
+        alert("hora de cenar!")
+        }</script>
+    <button id="part2" class="beta" onclick="Mensaje()">Botón</button>
+</body>
+</html>

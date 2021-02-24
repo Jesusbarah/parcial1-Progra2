@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+</head>
+<!--
+    ENUNCIADO
+Crear un index.html con lo básico de html5 para iniciar una página más un formulario que
+pida usuario contraseña y si es cliente o admin, al dar click en el boton enviar debe agregar
+una fila a la tabla que se encuentra abajo del formulario. Si el usuario es igual a uno de los
+usuarios ya ingresados debe colocar en una de las columnas existe, si el usuario no existe
+previamente debe decir nuevo. 
+-->
+<body>
+    <h2>Registro</h2>
+    <br>
+    <label for="userL">Usuario:</label><br>
+    <input type="text" id="user" name="user" placeholder="Usuario"><br>
+    <label for="passwordL">Contraseña:</label><br>
+    <input type="text" id="password" name="password" placeholder="Contraseña"><br>
+    <label for="clientL">Tipo de cliente:</label><br>
+    <input type="text" id="client" name="client" placeholder="Tipo de cliente"><br>
+    <label for="existenciaL">Existencia:</label><br>
+    <input type="text" id="exist" name="exist" placeholder="Existencia">
+    <br><br>
+    <button onclick="inputRegistro()">Registrar</button>
+    <br>
+    <br>
+    <table id="tabla1" class="omega">
+        <tr>
+            <th>usuario</th>
+            <th>contrasenia</th>
+            <th>cliente</th>
+            <th>existe</th>
+        </tr>
+        <tr>
+            <td>Pepito</td>
+            <td>123</td>
+            <td>admin</td>
+            <td>NUEVO</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
